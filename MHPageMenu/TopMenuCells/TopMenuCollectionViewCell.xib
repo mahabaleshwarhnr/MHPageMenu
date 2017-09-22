@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopMenuCollectionViewCell" id="gTV-IL-0wX" customClass="TopMenuCollectionViewCell" customModule="MHPageMenu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xec-UU-z4R">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1d-fk-dBp">
+                                <rect key="frame" x="8" y="8" width="94" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p1d-fk-dBp" firstAttribute="leading" secondItem="xec-UU-z4R" secondAttribute="leading" constant="8" id="2a4-sN-iVK"/>
+                            <constraint firstItem="p1d-fk-dBp" firstAttribute="top" secondItem="xec-UU-z4R" secondAttribute="top" constant="8" id="WVq-jX-NFk"/>
+                            <constraint firstAttribute="bottom" secondItem="p1d-fk-dBp" secondAttribute="bottom" constant="8" id="XST-Ak-apz"/>
+                            <constraint firstAttribute="trailing" secondItem="p1d-fk-dBp" secondAttribute="trailing" constant="8" id="w0u-TJ-aFM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="xec-UU-z4R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8Sk-6T-PvQ"/>
+                <constraint firstAttribute="trailing" secondItem="xec-UU-z4R" secondAttribute="trailing" id="DbV-d9-dOB"/>
+                <constraint firstItem="xec-UU-z4R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LW3-aG-cFG"/>
+                <constraint firstAttribute="bottom" secondItem="xec-UU-z4R" secondAttribute="bottom" id="fa3-9n-Cet"/>
+            </constraints>
+            <size key="customSize" width="110" height="70"/>
+            <connections>
+                <outlet property="contentHolderView" destination="xec-UU-z4R" id="ekQ-eP-R9b"/>
+                <outlet property="menuLabel" destination="p1d-fk-dBp" id="3er-sV-LE0"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="44"/>
+        </collectionViewCell>
+    </objects>
+</document>
